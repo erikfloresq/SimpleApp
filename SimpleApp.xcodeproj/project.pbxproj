@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		08CB99AE203A1C3500C59DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB99AD203A1C3500C59DE8 /* AppDelegate.swift */; };
-		08CB99B0203A1C3500C59DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB99AF203A1C3500C59DE8 /* ViewController.swift */; };
 		08CB99B3203A1C3500C59DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CB99B1203A1C3500C59DE8 /* Main.storyboard */; };
 		08CB99B6203A1C3500C59DE8 /* SimpleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08CB99B4203A1C3500C59DE8 /* SimpleApp.xcdatamodeld */; };
 		08CB99B8203A1C3500C59DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CB99B7203A1C3500C59DE8 /* Assets.xcassets */; };
 		08CB99BB203A1C3500C59DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CB99B9203A1C3500C59DE8 /* LaunchScreen.storyboard */; };
+		08E3306C203A1E0A00717AA3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3306B203A1E0A00717AA3 /* SearchViewController.swift */; };
+		08E3306E203A1E1800717AA3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3306D203A1E1800717AA3 /* ResultViewController.swift */; };
+		08E33071203A22A700717AA3 /* ClassRoom+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3306F203A22A700717AA3 /* ClassRoom+CoreDataClass.swift */; };
+		08E33072203A22A700717AA3 /* ClassRoom+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E33070203A22A700717AA3 /* ClassRoom+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08CB99AA203A1C3500C59DE8 /* SimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CB99AD203A1C3500C59DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08CB99AF203A1C3500C59DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08CB99B2203A1C3500C59DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08CB99B5203A1C3500C59DE8 /* SimpleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleApp.xcdatamodel; sourceTree = "<group>"; };
 		08CB99B7203A1C3500C59DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08CB99BA203A1C3500C59DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08CB99BC203A1C3500C59DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E3306B203A1E0A00717AA3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		08E3306D203A1E1800717AA3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		08E3306F203A22A700717AA3 /* ClassRoom+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassRoom+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08E33070203A22A700717AA3 /* ClassRoom+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassRoom+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		08CB99AC203A1C3500C59DE8 /* SimpleApp */ = {
 			isa = PBXGroup;
 			children = (
+				08CB99D1203A1D9200C59DE8 /* Storyboard */,
+				08CB99D0203A1D6F00C59DE8 /* Resource */,
+				08CB99CF203A1D6500C59DE8 /* View */,
+				08CB99CE203A1D3900C59DE8 /* Model */,
 				08CB99AD203A1C3500C59DE8 /* AppDelegate.swift */,
-				08CB99AF203A1C3500C59DE8 /* ViewController.swift */,
-				08CB99B1203A1C3500C59DE8 /* Main.storyboard */,
-				08CB99B7203A1C3500C59DE8 /* Assets.xcassets */,
-				08CB99B9203A1C3500C59DE8 /* LaunchScreen.storyboard */,
 				08CB99BC203A1C3500C59DE8 /* Info.plist */,
-				08CB99B4203A1C3500C59DE8 /* SimpleApp.xcdatamodeld */,
 			);
 			path = SimpleApp;
+			sourceTree = "<group>";
+		};
+		08CB99CE203A1D3900C59DE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08E3306F203A22A700717AA3 /* ClassRoom+CoreDataClass.swift */,
+				08E33070203A22A700717AA3 /* ClassRoom+CoreDataProperties.swift */,
+				08CB99B4203A1C3500C59DE8 /* SimpleApp.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08CB99CF203A1D6500C59DE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08E3306B203A1E0A00717AA3 /* SearchViewController.swift */,
+				08E3306D203A1E1800717AA3 /* ResultViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08CB99D0203A1D6F00C59DE8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				08CB99B7203A1C3500C59DE8 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		08CB99D1203A1D9200C59DE8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				08CB99B1203A1C3500C59DE8 /* Main.storyboard */,
+				08CB99B9203A1C3500C59DE8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CB99B0203A1C3500C59DE8 /* ViewController.swift in Sources */,
+				08E3306C203A1E0A00717AA3 /* SearchViewController.swift in Sources */,
 				08CB99AE203A1C3500C59DE8 /* AppDelegate.swift in Sources */,
+				08E3306E203A1E1800717AA3 /* ResultViewController.swift in Sources */,
+				08E33072203A22A700717AA3 /* ClassRoom+CoreDataProperties.swift in Sources */,
+				08E33071203A22A700717AA3 /* ClassRoom+CoreDataClass.swift in Sources */,
 				08CB99B6203A1C3500C59DE8 /* SimpleApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
